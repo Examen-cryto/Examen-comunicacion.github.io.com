@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Comunicación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>I.E.S. "TUPAC AMARU"</h1>
+    <h1>Examen de Comunicación</h1>
+
+    <!-- Campos para que el estudiante ingrese su nombre y grado -->
+    <div id="student-info">
+        <label for="student-name">Nombre:</label>
+        <input type="text" id="student-name" name="student-name" required><br><br>
+        <label for="student-grade">Grado:</label>
+        <input type="text" id="student-grade" name="student-grade" required><br><br>
+    </div>
+
+    <form id="quizForm">
+        <!-- Preguntas de opción múltiple -->
+        <div class="question">
+            <p>1. ¿Qué es un sustantivo?</p>
+            <label><input type="radio" name="q1" value="a"> a) Una acción o proceso</label><br>
+            <label><input type="radio" name="q1" value="b"> b) Una persona, lugar, cosa o idea</label><br>
+            <label><input type="radio" name="q1" value="c"> c) Un adjetivo</label>
+        </div>
+        <div class="question">
+            <p>2. ¿Cuál es un ejemplo de un verbo en infinitivo?</p>
+            <label><input type="radio" name="q2" value="a"> a) Comía</label><br>
+            <label><input type="radio" name="q2" value="b"> b) Comer</label><br>
+            <label><input type="radio" name="q2" value="c"> c) Comido</label>
+        </div>
+        <div class="question">
+            <p>3. ¿Qué tipo de palabra es 'rápidamente'?</p>
+            <label><input type="radio" name="q3" value="a"> a) Verbo</label><br>
+            <label><input type="radio" name="q3" value="b"> b) Adjetivo</label><br>
+            <label><input type="radio" name="q3" value="c"> c) Adverbio</label>
+        </div>
+        <div class="question">
+            <p>4. ¿Qué es una metáfora?</p>
+            <label><input type="radio" name="q4" value="a"> a) Una comparación sin usar 'como'</label><br>
+            <label><input type="radio" name="q4" value="b"> b) Una lista de elementos</label><br>
+            <label><input type="radio" name="q4" value="c"> c) Un sinónimo de hipérbole</label>
+        </div>
+        <div class="question">
+            <p>5. ¿Qué es un adjetivo?</p>
+            <label><input type="radio" name="q5" value="a"> a) Una acción o proceso</label><br>
+            <label><input type="radio" name="q5" value="b"> b) Una persona, lugar, cosa o idea</label><br>
+            <label><input type="radio" name="q5" value="c"> c) Una palabra que describe a un sustantivo</label>
+        </div>
+
+        <!-- Preguntas de respuesta escrita -->
+        <div class="question">
+            <p>6. ¿Qué es una metáfora?</p>
+            <input type="text" id="q6">
+        </div>
+        <div class="question">
+            <p>7. Da un ejemplo de un símil.</p>
+            <input type="text" id="q7">
+        </div>
+        <div class="question">
+            <p>8. ¿Quién escribió "Don Quijote de la Mancha"?</p>
+            <input type="text" id="q8">
+        </div>
+        <div class="question">
+            <p>9. Define qué es una poesía lírica.</p>
+            <input type="text" id="q9">
+        </div>
+        <div class="question">
+            <p>10. Da un ejemplo de una hipérbole.</p>
+            <input type="text" id="q10">
+        </div>
+        <div class="question">
+            <p>11. ¿Qué significa "in media res"?</p>
+            <input type="text" id="q11">
+        </div>
+        <div class="question">
+            <p>12. ¿Qué caracteriza a una novela comparada con un cuento?</p>
+            <input type="text" id="q12">
+        </div>
+        <div class="question">
+            <p>13. ¿Qué elementos se encuentran comúnmente en la literatura romántica?</p>
+            <input type="text" id="q13">
+        </div>
+        <div class="question">
+            <p>14. ¿Qué es un himno?</p>
+            <input type="text" id="q14">
+        </div>
+        <div class="question">
+            <p>15. ¿Cuáles son las diferencias entre una novela y un cuento?</p>
+            <input type="text" id="q15">
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Enviar respuestas</button>
+    </form>
+    <div id="result" class="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
